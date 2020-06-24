@@ -8,5 +8,5 @@ touch /etc/origin/master/htpasswd
 ansible-playbook -i inventory.ini openshift-ansible/playbooks/prerequisites.yml
 ansible-playbook -i inventory.ini openshift-ansible/playbooks/deploy_cluster.yml
 
-htpasswd -b /etc/origin/master/htpasswd admin admin123
-oc adm policy add-cluster-role-to-user cluster-admin admin
+htpasswd -b /etc/origin/master/htpasswd jebong 214jebong123
+oc adm policy add-cluster-role-to-user cluster-admin jebong
